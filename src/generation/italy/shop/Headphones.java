@@ -21,7 +21,7 @@ public class Headphones extends Product{
 		this.color = color;
 	}
 
-	public boolean isAreWifi() {
+	public boolean areWifi() {
 		return areWifi;
 	}
 

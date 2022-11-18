@@ -5,7 +5,7 @@ import java.util.Random;
 public class Product {
 
 	private int serialCode;
-	private  String brand;
+	private String brand;
 	private int price;
 	static final int tax = 20;
 
