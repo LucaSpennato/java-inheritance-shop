@@ -21,7 +21,7 @@ public class Prodotto {
 		return codice;
 	}
 
-	final private void setCodice() {
+	private void setCodice() {
 		Random rnd = new Random();
 		this.codice = rnd.nextInt(999999);
 	}
@@ -49,7 +49,6 @@ public class Prodotto {
 	public int getPriceWithIva() {
 		return prezzo + (prezzo * iva / 100);
 	}
-	
 	
 	
 }
