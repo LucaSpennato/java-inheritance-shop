@@ -16,7 +16,7 @@ public class Catalogue {
 		for (int i = 0; i < products.length; i++) {
 			
 			System.out.println("Brand: ");
-			String brand = sc.nextLine();
+			String brand = sc.next();
 			System.out.println("Price: ");
 			int price = sc.nextInt();
 			
@@ -30,7 +30,7 @@ public class Catalogue {
 			}else if(choice.equals("headphones")) {
 				
 				System.out.println("Color: ");
-				String color = sc.nextLine();
+				String color = sc.next();
 				
 				System.out.println("Are wifi or wired? ");
 				boolean areWifi = sc.nextBoolean();
