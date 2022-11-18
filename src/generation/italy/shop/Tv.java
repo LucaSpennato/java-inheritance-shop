@@ -28,6 +28,12 @@ public class Tv extends Product{
 		this.isSmartTv = isSmartTv;
 	}
 	
-	
+	@Override
+	public String toString() {
+
+		return super.toString()
+				+ "\nInches: " + inches
+				+ "\nSmart tv: " + isSmartTv;
+	}
 	
 }

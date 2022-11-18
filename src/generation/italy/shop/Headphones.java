@@ -29,6 +29,12 @@ public class Headphones extends Product{
 		this.areWifi = areWifi;
 	}
 	
-	
+	@Override
+	public String toString() {
+
+		return super.toString()
+				+ "\nColor: " + color
+				+ "\nWifi: " + areWifi;
+	}
 	
 }

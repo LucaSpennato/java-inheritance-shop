@@ -31,5 +31,12 @@ public class Smarphone extends Product{
 		this.storage = storage;
 	}
 
+	@Override
+	public String toString() {
+
+		return super.toString() 
+				+ "\nIMEI code: " + IMEI
+				+ "\nStorage: " + storage;
+	}
 	
 }
