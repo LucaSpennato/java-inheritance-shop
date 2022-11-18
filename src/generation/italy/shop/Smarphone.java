@@ -2,15 +2,15 @@ package generation.italy.shop;
 
 import java.util.Random;
 
-public class Smarphone extends Prodotto{
+public class Smarphone extends Product{
 
-	String IMEI;
-	int memoria;
+	private String IMEI;
+	private int storage;
 	
-	public Smarphone(String marca, int prezzo, int memoria) {
+	public Smarphone(String marca, int prezzo, int storage) {
 		
 		super(marca, prezzo);
-		this.memoria = memoria;
+		this.storage = storage;
 		setIMEI();
 	}
 
@@ -23,14 +23,13 @@ public class Smarphone extends Prodotto{
 		IMEI = rnd.nextInt(999999999) + "" + rnd.nextInt(99999);
 	}
 
-	public int getMemoria() {
-		return memoria;
+	public int getstorage() {
+		return storage;
 	}
-
-	public void setMemoria(int memoria) {
-		this.memoria = memoria;
-	}
-
 	
+	public void setStorage(int storage) {
+		this.storage = storage;
+	}
+
 	
 }
