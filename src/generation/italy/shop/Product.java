@@ -50,5 +50,13 @@ public class Product {
 		return price + (price * tax / 100);
 	}
 	
-	
+	@Override
+	public String toString() {
+
+		return "Serial code: " + serialCode
+				+ "\nBrand: " + brand
+				+ "\nPrice: " + price + "$"
+				+ "\nTax: " + tax + "%"
+				+ "\nPrice with tax: " + getPriceWithTax() + "$";
+	}
 }

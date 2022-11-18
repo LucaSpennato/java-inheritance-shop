@@ -5,9 +5,9 @@ public class Headphones extends Product{
 	String color;
 	boolean areWifi;
 	
-	public Headphones(String marca, int prezzo ,String color, boolean areWifi) {
+	public Headphones(String brand, int price ,String color, boolean areWifi) {
 		
-		super(marca, prezzo);
+		super(brand, price);
 		this.color = color;
 		this.areWifi = areWifi;
 
@@ -29,12 +29,16 @@ public class Headphones extends Product{
 		this.areWifi = areWifi;
 	}
 	
+	private String areWifiOrWired() {
+		return areWifi ? "Wifi" : "Wired";
+	}
+	
 	@Override
 	public String toString() {
 
 		return super.toString()
 				+ "\nColor: " + color
-				+ "\nWifi: " + areWifi;
+				+ "\nType: " +  areWifiOrWired();
 	}
 	
 }
