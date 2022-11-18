@@ -20,7 +20,7 @@ public class Tv extends Product{
 		this.inches = inches;
 	}
 
-	public boolean isSmartTv() {
+	public boolean getIsSmartTv() {
 		return isSmartTv;
 	}
 
@@ -32,8 +32,8 @@ public class Tv extends Product{
 	public String toString() {
 
 		return super.toString()
-				+ "\nInches: " + inches
-				+ "\nSmart tv: " + isSmartTv;
+				+ "\nInches: " + getInches()
+				+ "\nSmart tv: " + getIsSmartTv();
 	}
 	
 }

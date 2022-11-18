@@ -37,7 +37,7 @@ public class Headphones extends Product{
 	public String toString() {
 
 		return super.toString()
-				+ "\nColor: " + color
+				+ "\nColor: " + getColor()
 				+ "\nType: " +  areWifiOrWired();
 	}
 	

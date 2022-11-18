@@ -53,9 +53,9 @@ public class Product {
 	@Override
 	public String toString() {
 
-		return "Serial code: " + serialCode
-				+ "\nBrand: " + brand
-				+ "\nPrice: " + price + "$"
+		return "Serial code: " + getSerialCode()
+				+ "\nBrand: " + getBrand()
+				+ "\nPrice: " + getPrice() + "$"
 				+ "\nTax: " + tax + "%"
 				+ "\nPrice with tax: " + getPriceWithTax() + "$";
 	}

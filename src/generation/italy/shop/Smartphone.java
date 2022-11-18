@@ -23,7 +23,7 @@ public class Smartphone extends Product{
 		IMEI = rnd.nextInt(999999999) + "" + rnd.nextInt(99999);
 	}
 
-	public int getstorage() {
+	public int getStorage() {
 		return storage;
 	}
 	
@@ -35,8 +35,8 @@ public class Smartphone extends Product{
 	public String toString() {
 
 		return super.toString() 
-				+ "\nIMEI code: " + IMEI
-				+ "\nStorage: " + storage + "gb";
+				+ "\nIMEI code: " + getIMEI()
+				+ "\nStorage: " + getStorage() + "gb";
 	}
 	
 }
